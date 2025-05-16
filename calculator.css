@@ -1,0 +1,139 @@
+/* ==================== Global Styles ==================== */
+body {
+    /* Layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    /* Typography */
+    font-family: "Google Sans", Arial, sans-serif;
+
+    /* Box Model */
+    margin: 0;
+
+    /* Visual */
+    background-color: #b8b8b8;
+}
+
+/* ==================== Calculator Container ==================== */
+.calculator {
+    /* Box Model */
+    padding: 1.5rem;
+    width: 320px;
+
+    /* Visual */
+    background-color: #b8b8b8;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* ==================== Display Input ==================== */
+.display {
+    /* Box Model */
+    width: 100%;
+    height: 60px;
+    margin-bottom: 1rem;
+    padding: 0 10px;
+
+    /* Typography */
+    font-size: 2rem;
+    text-align: right;
+    color: #202124;
+
+    /* Visual */
+    background: transparent;
+    border-bottom: 2px solid #a8a8a8;
+
+    /* Interactivity */
+    border: none;
+    outline: none;
+}
+
+/* ==================== Buttons Grid ==================== */
+.buttons {
+    /* Layout */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* ==================== Button Base Style ==================== */
+.btn {
+    /* Box Model */
+    height: 60px;
+
+    /* Typography */
+    font-size: 1.2rem;
+    color: #202124;
+
+    /* Visual */
+    background-color: #e8f0fe;
+    border: none;
+    border-radius: 12px;
+
+    /* Interactivity */
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.btn:hover {
+    /* Visual */
+    background-color: #e0e0e0;
+}
+
+/* ==================== Operator Button ==================== */
+.operator {
+    /* Visual */
+    background-color: #494949;
+    color: white;
+}
+.operator:hover {
+    /* Visual */
+    background-color: #e0e0e0;
+}
+
+/* ==================== Equal Button ==================== */
+.equal {
+    /* Layout */
+    grid-column: span 2;
+
+    /* Visual */
+    background-color: #494949;
+    color: white;
+}
+.equal:hover {
+    /* Visual */
+    color: #494949;
+    background-color: #e0e0e0;
+}
+
+/* ==================== Footer ==================== */
+.footer-container {
+    /* Positioning */
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Box Model */
+    padding: 20px;
+    width: 100%;
+
+    /* Typography */
+    text-align: center;
+
+    /* Visual */
+    background-color: #b8b8b8;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+.footer-text {
+    /* Typography */
+    font-family: 'Arial', Helvetica, sans-serif;
+    text-align: center;
+
+    /* Box Model */
+    margin: 0 auto;
+
+    /* Visual */
+    overflow: hidden;
+}
